@@ -59,7 +59,7 @@
                         <a href="#" class="btn btn-primary btn-sm">
                             <i class="fa fa-edit"></i> Edit
                         </a>
-                        <a href="#" class="btn btn-danger btn-sm">
+                        <a href="?page=bagianHapus&id=<?php echo $row['id'];?>" onclick="javascript: return confirm('Konfirmasi Data Akan Dihapus ?');" class="btn btn-danger btn-sm">
                             <i class="fa fa-trash"></i> Delete
                         </a> 
                     </td>

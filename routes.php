@@ -21,6 +21,14 @@
                 include "pages/bagian/bagianTambah.php";
                 break;
 
+        case "bagianUbah":
+                include "pages/bagian/bagianUbah.php";
+                break;
+
+        case "bagianHapus":
+                include "pages/bagian/bagianHapus.php";
+                break;
+
         // =============== KARYAWAN
 
         case "karyawan":
