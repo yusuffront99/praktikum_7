@@ -6,6 +6,11 @@
     <div class="col">
         <h3>Bagian</h3>
     </div>
+    <div class="col">
+        <a href="?page=bagianTambah" class="btn btn-success btn-sm float-end">
+            <i class="fa fa-plus-circle"></i> Tambah
+        </a>
+    </div>
 </div>
 <div class="row mt-3">
     <div class="col">
@@ -39,6 +44,7 @@
                 <tr>
                     <th scope="col" width="50">#</th>
                     <th scope="col">Bagian</th>
+                    <th scope="col" width="200">Opsi</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,6 +55,14 @@
                 <tr class="align-middle">
                     <th scope="row"><?php echo $no++;?></th>
                     <td><?php echo $row['nama']?></td>
+                    <td>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <a href="#" class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i> Delete
+                        </a> 
+                    </td>
                 </tr>
 
                 <?php 

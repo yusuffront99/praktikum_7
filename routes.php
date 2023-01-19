@@ -12,9 +12,16 @@
                 include "pages/dashboard.php";
                 break;
 
+        // =============== BAGIAN
         case "bagian":
-                include "pages/bagian.php";
+                include "pages/bagian/bagian.php";
                 break;
+
+        case "bagianTambah":
+                include "pages/bagian/bagianTambah.php";
+                break;
+
+        // =============== KARYAWAN
 
         case "karyawan":
                 include "pages/karyawan.php";
