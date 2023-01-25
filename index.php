@@ -19,12 +19,14 @@
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
-        <?php include "components/sidebar.php" ?>
+        <?php 
+            if($_SESSION['level'] == 'adminer' ? include "components/leaders/sidebar.php" : include "components/sidebar.php") 
+        ?>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <?php  include "components/nav.php" ?>
+            <?php include "components/nav.php" ?>
 
             <div class="container-fluid px-4">
                 <?php include "routes.php" ?>
