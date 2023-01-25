@@ -56,7 +56,7 @@
                     <th scope="row"><?php echo $no++;?></th>
                     <td><?php echo $row['nama']?></td>
                     <td>
-                        <a href="#" class="btn btn-primary btn-sm">
+                        <a href="?page=bagianUbah&id=<?php echo $row['id'];?>" class="btn btn-primary btn-sm">
                             <i class="fa fa-edit"></i> Edit
                         </a>
                         <a href="?page=bagianHapus&id=<?php echo $row['id'];?>" onclick="javascript: return confirm('Konfirmasi Data Akan Dihapus ?');" class="btn btn-danger btn-sm">

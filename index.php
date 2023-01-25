@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!-- https://www.youtube.com/watch?v=CMwzLURK-rQ -->
 <!DOCTYPE html>
 <html lang="en">

@@ -30,7 +30,7 @@
                         <i class="fa fa-exclamation-circle"></i> Nama Bagian Sudah Ada
                     </div>';
                 } else {
-                    $insertSQL = "INSERT INTO bagian SET nama = '$nama'";
+                    $insertSQL = "INSERT INTO bagian SET nam = '$nama'";
                     $result = mysqli_query($connection, $insertSQL);
                     if(!$result) {
         ?>
@@ -56,6 +56,11 @@
     <div class="col">
         <div class="card px-3">
             <form action="" method="post">
+                <div class="mb-2">
+                    <label for="id" class="form-label">ID</label>
+                    <input type="text" name="id" id="id" class="form-control" value="<?php echo $id ?>">
+                </div>
+
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama Bagian</label>
                     <input type="text" name="nama" id="nama" class="form-control" placeholder="misal: HRD" required>
