@@ -1,5 +1,8 @@
-<?php 
-    session_start();
+<?php
+session_start();
+if (is_null($_SESSION['id'])) {
+    header('location:login.php');
+}
 ?>
 <!-- https://www.youtube.com/watch?v=CMwzLURK-rQ -->
 <!DOCTYPE html>
@@ -20,7 +23,7 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <?php 
-            if($_SESSION['level'] == 'adminer' ? include "components/leaders/sidebar.php" : include "components/sidebar.php") 
+            if($_SESSION['level'] != 'adminer' ? include "components/sidebar.php" : include "components/leaders/sidebar.php") 
         ?>
         <!-- /#sidebar-wrapper -->
 

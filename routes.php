@@ -32,11 +32,29 @@
         // =============== KARYAWAN
 
         case "karyawan":
-                include "pages/karyawan.php";
+                include "pages/karyawan/karyawan.php";
+                break;
+
+        case "karyawanTambah":
+                include "pages/karyawan/karyawanTambah.php";
+                break;
+
+        case "karyawanUbah":
+                include "pages/karyawan/karyawanUbah.php";
+                break;
+
+        case "karyawanHapus":
+                include "pages/karyawan/karyawanHapus.php";
+                break;
+
+        //  =============== PENGGAJIAN
+
+        case "pilihBulanTahunPenggajian":
+                include "pages/penggajian/pilihBulanTahunPenggajian.php";
                 break;
 
         case "penggajian":
-                include "pages/penggajian.php";
+                include "pages/penggajian/penggajian.php";
                 break;
 
         default :
