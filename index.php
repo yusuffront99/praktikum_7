@@ -23,7 +23,7 @@ if (is_null($_SESSION['id'])) {
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <?php 
-            if($_SESSION['level'] != 'adminer' ? include "components/sidebar.php" : include "components/leaders/sidebar.php") 
+            if($_SESSION['level'] != 'adminer' ? include "components/leaders/sidebar.php" : include "components/sidebar.php") 
         ?>
         <!-- /#sidebar-wrapper -->
 

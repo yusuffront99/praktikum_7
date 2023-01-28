@@ -35,11 +35,11 @@
             return;    
         }
         ?>
-        <a href="" class="btn btn-success float-end">
-            <i class="fa fa-plu-circle"></i> Tambah
+        <a href="?page=pilihKaryawanPenggajian" class="btn btn-success float-end">
+            <i class="fa fa-plus-circle"></i> Tambah
         </a>
         <div class="col">
-            <a href="?page=pilihanBulanTahunPenggajian" class="btn btn-primary float-end">
+            <a href="?page=pilihBulanTahunPenggajian" class="btn btn-primary float-end">
                 <i class="fa fa-arrow-circle-left"></i>
                 Kembali
             </a>

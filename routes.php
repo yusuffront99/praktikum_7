@@ -49,13 +49,18 @@
 
         //  =============== PENGGAJIAN
 
+        case "penggajian":
+                include "pages/penggajian/penggajian.php";
+                break;
+
         case "pilihBulanTahunPenggajian":
                 include "pages/penggajian/pilihBulanTahunPenggajian.php";
                 break;
 
-        case "penggajian":
-                include "pages/penggajian/penggajian.php";
+        case "pilihKaryawanPenggajian":
+                include "pages/penggajian/pilihKaryawanPenggajian.php";
                 break;
+
 
         default :
                 include "pages/404.php";        
