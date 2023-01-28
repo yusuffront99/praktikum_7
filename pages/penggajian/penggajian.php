@@ -15,18 +15,27 @@
             $selectSQL = "";
             if($bulan == 'Semua') {
                 if($tahun == 'Semua') {
-                    $selectSQL ="SELECT P.*, K.nama FROM penggajian P LEFT JOIN karyawan K ON P.karyawan_nik";
+                    $selectSQL ="SELECT P.*, K.nama FROM penggajian P LEFT JOIN karyawan K ON P.karyawan_nik = K.nik";
                 } else {
                     $selectSQL = "SELECT P.*, K.nama FROM penggajian P LEFT JOIN karyawan K ON P.karyawan_nik = K.nik WHERE tahun=$tahun";
                 }
             } else {
                 if($tahun != 'Semua') {
-                    $selectSQL = "SELECT P.*, K.nama FROM penggajian P LEFT JOIN karyawan K ON P.karyawan_nik = K.nik WHERE tahun=$tahun AND bulan='$bulan'";
+                    $selectSQL = "SELECT P.*, K.nama FROM penggajian P LEFT JOIN karyawan K ON P.karyawan_nik = K.nik";
                 }
             }
 
             $result = mysqli_query($connection, $selectSQL);
             if(!$result) {
+            ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php echo mysqli_error($connection)?>
+                </div>
+            <?php
+                return;
+            }
+            if(mysqli_num_rows($result) == 0)
+            {
             ?>
                 <div class="alert alert-danger" role="alert">
                     Data Kosong
@@ -69,7 +78,7 @@
                     <td><?php echo $row["tahun"]; ?></td>
                     <td class="text-end"><?php echo number_format($row["gaji_bayar"])?></td>
                     <td>
-                        <a href="?page=penggajianhapus&id=<?= $row["id"];?>&bulan=<?= $bulan?>&tahun=<?= $tahun?>" class="btn btn-danger" onclick="javascript: return confirm('Konfirmasi data akan dihapus');">
+                        <a href="?page=penggajianHapus&id=<?= $row["id"]?>&bulan=<?= $bulan?>&tahun=<?= $tahun?>" class="btn btn-danger" onclick="javascript: return confirm('Konfirmasi data akan dihapus');">
                             <i class="fa fa-trash"></i> Hapus
                         </a>
                     </td>

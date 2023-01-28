@@ -134,7 +134,7 @@
                 <div class="mb-3 mt-3">
                 <label for="bulan_select" class="form-label">Bulan</label>
                     <select name="bulan_select" id="" class="form-select" aria-label="Default Select Example">
-                        <option value="Semua" selected>Semua</option>
+                        <option value="" selected>-Pilih Bulan -</option>
                         <option value="01">Januari</option>
                         <option value="02">Februari</option>
                         <option value="03">Maret</option>
