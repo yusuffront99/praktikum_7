@@ -61,6 +61,10 @@
                 include "pages/penggajian/pilihKaryawanPenggajian.php";
                 break;
 
+        case "penggajianTambah":
+                include "pages/penggajian/penggajianTambah.php";
+                break;
+
 
         default :
                 include "pages/404.php";        

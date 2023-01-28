@@ -47,7 +47,7 @@
                     $no = 1;
                     while($row = mysqli_fetch_assoc($result)) {
                     ?>
-                    <div class="align-middle">
+                    <tr class="align-middle">
                         <th scope="row"><?php echo $row['nik'];?></th>
                         <td><?php echo $row['nama'];?></td>
                         <td><?php echo $row['nama_bagian'];?></td>
@@ -57,7 +57,7 @@
                                 <i class="fa fa-arrow-circle-right"></i> Pilih
                             </a>
                         </td>
-                    </div>
+                    </tr>
                     <?php
                     }
                 ?>
