@@ -21,7 +21,7 @@
                 }
             } else {
                 if($tahun != 'Semua') {
-                    $selectSQL = "SELECT P.*, K.nama FROM penggajian P LEFT JOIN karyawan K ON P.karyawan_nik = K.nik";
+                    $selectSQL = "SELECT P.*, K.nama FROM penggajian P LEFT JOIN karyawan K ON P.karyawan_nik = K.nik WHERE bulan=$bulan AND tahun=$tahun";
                 }
             }
 

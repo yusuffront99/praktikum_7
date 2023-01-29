@@ -129,8 +129,8 @@
 
         <div class="card px-3 mt-3">
             <form action="" method="post">
-                <input type="text" name="karyawan_nik" value="<?php echo $row['nik']?>">
-                <input type="text" name="gaji_bayar" value="<?php echo $row['gaji_pokok']?>">
+                <input type="hidden" name="karyawan_nik" value="<?php echo $row['nik']?>">
+                <input type="hidden" name="gaji_bayar" value="<?php echo $row['gaji_pokok']?>">
                 <div class="mb-3 mt-3">
                 <label for="bulan_select" class="form-label">Bulan</label>
                     <select name="bulan_select" id="" class="form-select" aria-label="Default Select Example">
